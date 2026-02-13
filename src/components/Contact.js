@@ -113,8 +113,8 @@ const handleSubmit = (e) => {
               <p className="mb-2">Other ways to reach me:</p>
               <div className="d-flex pt-2">
                 <a className="btn btn-square btn-primary me-2" href="https://wa.me/+2348167462350?text=urlencodedtext" target="_blank" rel="noopener noreferrer"><i className="bi bi-whatsapp"></i></a>
-                <a className="btn btn-square btn-primary me-2" href="https://compose.mail.yahoo.com/?to=davidjonah65@yahoo.com" target="_blank" rel="noopener noreferrer"><i className="fi fi-brands-yahoo"></i></a>
-                <a className="btn btn-square btn-primary me-2" href="https://mail.google.com/mail/?view=cm&fs=1&to=djonah04@gmail.com" target="_blank" rel="noopener noreferrer"><i className="fi fi-brands-google"></i></a>
+                <a className="btn btn-square btn-primary me-2" href="https://compose.mail.yahoo.com/?to=davidjonah65@yahoo.com" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-yahoo"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 6l5 0" /><path d="M7 18l7 0" /><path d="M4.5 6l5.5 7v5" /><path d="M10 13l6 -5" /><path d="M12.5 8l5 0" /><path d="M20 11l0 4" /><path d="M20 18l0 .01" /></svg></a>
+                <a className="btn btn-square btn-primary me-2" href="https://mail.google.com/mail/?view=cm&fs=1&to=djonah04@gmail.com" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-google"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20.945 11a9 9 0 1 1 -3.284 -5.997l-2.655 2.392a5.5 5.5 0 1 0 2.119 6.605h-4.125v-3h7.945" /></svg></a>
               </div>
             </div>
             <div className="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
