@@ -18,9 +18,9 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Install dependencies and build
+      - name: Install dependencies and build (allow legacy peer deps)
         run: |
-          npm ci
+          npm ci --legacy-peer-deps
           npm run build
 
       - name: Deploy to FTP

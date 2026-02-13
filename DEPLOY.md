@@ -33,6 +33,17 @@ Troubleshooting tips
 - If authentication fails: double-check `FTP_USERNAME`/`FTP_PASSWORD` and that your server allows connections from GitHub Actions runners.
 - If files are not visible: verify `FTP_SERVER_DIR` and confirm file permissions on the remote host.
 - For debugging: temporarily set `dry-run: true` in the action (see action docs) to preview changes without uploading.
+ - If `npm ci` fails in the build step due to peer dependency conflicts (for example, `react-animate-on-scroll` requiring React < 19), update the workflow to install with legacy peer deps. The workflow in `.github/workflows/deploy.yml` already uses:
+
+  ```bash
+  npm ci --legacy-peer-deps
+  npm run build
+  ```
+
+  Alternatively you can:
+  - Remove or replace the problematic dependency (recommended long-term).
+  - Update `package.json` to use compatible packages.
+  - Run `npm ci --force` (less recommended).
 
 References
 - Action used: https://github.com/SamKirkland/FTP-Deploy-Action
