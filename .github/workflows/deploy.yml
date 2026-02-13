@@ -33,3 +33,4 @@ jobs:
           # Optional: set port (default 21) and protocol (ftp or ftps)
           port: ${{ secrets.FTP_PORT }}
           protocol: ${{ secrets.FTP_PROTOCOL }}
+ 
