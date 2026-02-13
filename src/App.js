@@ -14,6 +14,13 @@ const Work = lazy(() => import("./components/Work"));
 function App() {
   const [currentPage, setCurrentPage] = useState("home");
 
+  // Restore sidebar toggle state from localStorage (works on live deploy where scripts.js may run before React mounts)
+  useEffect(() => {
+    if (localStorage.getItem("sb|sidebar-toggle") === "true") {
+      document.body.classList.add("sb-sidenav-toggled");
+    }
+  }, []);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       const spinner = document.getElementById("spinner");

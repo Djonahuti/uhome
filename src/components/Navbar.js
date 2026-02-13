@@ -2,6 +2,15 @@ import React from "react";
 import ThemeToggle from "./ThemeToggle";
 
 function Navbar({ currentPage, setCurrentPage }) {
+  const handleSidebarToggle = (e) => {
+    e.preventDefault();
+    document.body.classList.toggle("sb-sidenav-toggled");
+    localStorage.setItem(
+      "sb|sidebar-toggle",
+      document.body.classList.contains("sb-sidenav-toggled")
+    );
+  };
+
   return (
     <>
       <nav className="sb-topnav navbar navbar-expand">
@@ -11,9 +20,12 @@ function Navbar({ currentPage, setCurrentPage }) {
         </a>
         {/* Sidebar Toggle*/}
         <button
+          type="button"
           className="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
           id="sidebarToggle"
           href="#!"
+          onClick={handleSidebarToggle}
+          aria-label="Toggle sidebar"
         >
           <i className="fas fa-bars"></i>
         </button>
