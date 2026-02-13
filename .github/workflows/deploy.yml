@@ -24,12 +24,11 @@ jobs:
           npm run build
 
       - name: Deploy to FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@v4
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./build
           server-dir: ${{ secrets.FTP_SERVER_DIR }}
           # Optional: set port (default 21) and protocol (ftp or ftps)
           port: ${{ secrets.FTP_PORT }}
