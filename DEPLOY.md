@@ -11,7 +11,7 @@ Required repository secrets
 Optional secrets
 - `FTP_PORT` — port number (default: 21)
 - `FTP_PROTOCOL` — `ftp` or `ftps` (optional; default is the action's default)
-
+ 
 How this workflow works
 - On push to the `main` branch (or when manually triggered) the workflow will:
   1. Checkout the repo
