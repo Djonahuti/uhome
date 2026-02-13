@@ -8,7 +8,7 @@ function Sidebar({ currentPage, setCurrentPage }) {
           <div className="text-center">
             <div
               className="author-img"
-              style={{ backgroundImage: `url(assets/biglap.jpg)` }}
+              style={{ backgroundImage: `url(assets/bgc.jpeg)` }}
             ></div>
             <h1 id="my-info">
               <a href="https://www.uhome.com.ng">David Utibe Jonah</a>

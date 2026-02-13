@@ -62,7 +62,7 @@ function Home() {
               {/* Header profile picture */}
               <div className="d-flex justify-content-center mt-5 mt-xxl-0">
                 <div className="profile bg-gradient-primary-to-secondary">
-                  <img className="profile-img" src="assets/bigg.png" alt="..." />
+                  <img className="profile-img" src="assets/bigman.png" alt="..." />
                   <div className="dots-1">
                   {/* SVG Dots */}
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style={{ width: "100%", height: "auto" }}>
